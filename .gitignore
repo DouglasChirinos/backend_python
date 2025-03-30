@@ -1,0 +1,11 @@
+# Entorno virtual
+pybackend/
+
+# Archivos de Python comunes para ignorar
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.egg-info/
+*.log

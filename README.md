@@ -1,33 +1,6 @@
-# SOCIAL OPLESK
-### 🏴‍☠️ HACKS - BACKEND - 1
+# Douglas Chirinos
+###  HACKS - BACKEND - 1
 
-<br/>
-
-📚 tutorial de flask - 1 [tutorial](https://towardsdatascience.com/creating-restful-apis-using-flask-and-python-655bad51b24)
-<br/>
-📚 tutorial de flask - 2 [tutorial](https://www.moesif.com/blog/technical/api-development/Building-RESTful-API-with-Flask/)
-<br/>
-📚 tutorial de flask - 3 [tutorial](https://www.digitalocean.com/community/tutorials/processing-incoming-request-data-in-flask)
----
-
-```diff
-- NOTA HACER LAS PRÁCTICAS MEDIANTE VISUAL STUDIO CODE  
-```
-
-```diff
-* Clonar el repositorio https://github.com/SocialOplesk/hack_backend_python_1.git
-
-* Instalar las dependencias:
-  pip install -r requirements.txt 
-
-* Ejecutar servidor app.py en terminal: flask run --debug
-
-* Ejecutar test a nivel global en terminal: pytest -v
-
-* Ejecutar test por cada hack en terminal: pytest -v test_server.py::test_hack_1
-
-* Debes tener en ejecución el servidor app.py para ejecutar correctamente el testing  
-```
 <br/>
 
 |Hacks | Details | 
@@ -42,123 +15,139 @@
 | H-8      | {'payload': {'email':email,'name':name,'id':id,}}  | 
 <br/> 
 
-## 🏆 H-1 
+## 🏆 H-1 - Test
 
 ```sh
-CREATE AN ENDPOINT THAT RESPONDS IF THE REQUEST IS OF TYPE "GET"
+=============================== test session starts ================================
+platform linux -- Python 3.11.2, pytest-7.2.1, pluggy-1.3.0 -- /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1/pybackend/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1
+collected 1 item                                                                   
 
-ENDPOINT:("/users")
-METHOD: "GET"
-TYPE: JSON
+test_server.py::test_hack_1 PASSED                                           [100%]
 
-output => {'payload':'success'}
+================================ 1 passed in 0.10s =================================
 ```
 <br/>
 
 
-## 🏆 H-2
+## 🏆 H-2 - Test
 ```sh
-CREATE AN ENDPOINT THAT RESPONDS IF THE REQUEST IS OF TYPE "POST"
+=============================== test session starts ================================
+platform linux -- Python 3.11.2, pytest-7.2.1, pluggy-1.3.0 -- /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1/pybackend/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1
+collected 1 item                                                                   
 
-ENDPOINT:("/user")
-METHOD: "POST"
-TYPE: JSON
+test_server.py::test_hack_2 PASSED                                           [100%]
 
-output => {'payload':'success'}
+================================ 1 passed in 0.10s =================================
 ```
 <br/>
 
-## 🏆 H-3
+## 🏆 H-3 - Test
 ```sh
-CREATE AN ENDPOINT THAT RESPONDS IF THE REQUEST IS OF TYPE "DELETE"
+=============================== test session starts ================================
+platform linux -- Python 3.11.2, pytest-7.2.1, pluggy-1.3.0 -- /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1/pybackend/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1
+collected 1 item                                                                   
 
-ENDPOINT:("/user")
-METHOD: "DELETE"
-TYPE: JSON
+test_server.py::test_hack_3 PASSED                                           [100%]
 
-output => {'payload':'success'}
+================================ 1 passed in 0.10s =================================
 ```
 <br/>
 
-## 🏆 H-4
+## 🏆 H-4 -Test
 ```sh
-CREATE AN ENDPOINT THAT RESPONDS IF THE REQUEST IS OF TYPE "PUT"
+=============================== test session starts ================================
+platform linux -- Python 3.11.2, pytest-7.2.1, pluggy-1.3.0 -- /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1/pybackend/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1
+collected 1 item                                                                   
 
-ENDPOINT:("/user")
-METHOD: "PUT"
-TYPE: JSON
+test_server.py::test_hack_4 PASSED                                           [100%]
 
-output => {'payload':'success'}
+================================ 1 passed in 0.10s =================================
 
 ```
 <br/>
 
-## 🏆 H-5
+## 🏆 H-5 - Test
 ```sh
-CREATE AN ENDPOINT THAT RESPONDS IF THE REQUEST IS OF TYPE "GET"
+=============================== test session starts ================================
+platform linux -- Python 3.11.2, pytest-7.2.1, pluggy-1.3.0 -- /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1/pybackend/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1
+collected 1 item                                                                   
 
-ENDPOINT:("/api/v1/users")
-METHOD: "GET"
-TYPE: JSON
+test_server.py::test_hack_5 PASSED                                           [100%]
 
-output => {'payload':[]}
+================================ 1 passed in 0.10s =================================
 ```
 <br/>
 
 
-## 🏆 H-6
+## 🏆 H-6 - Test
 ```sh
-CREATE AN ENDPOINT THAT RESPONDS IF THE REQUEST IS OF TYPE "POST"
+=============================== test session starts ================================
+platform linux -- Python 3.11.2, pytest-7.2.1, pluggy-1.3.0 -- /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1/pybackend/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1
+collected 1 item                                                                   
 
-ENDPOINT:("/api/v1/user")
-METHOD: "POST"
-TYPE: JSON
-INPUT: http://localhost:5000/api/v1/user?email=foo@foo.foo&name=fooziman
+test_server.py::test_hack_6 PASSED                                           [100%]
 
-output =>  {
-        'payload': {
-            'email':email,
-            'name':name,
-        }
-    }
+================================ 1 passed in 0.10s =================================
 ```
 <br/>
 
-## 🏆 H-7
+## 🏆 H-7 - Test
 ```sh
-CREATE AN ENDPOINT THAT RESPONDS IF THE REQUEST IS OF TYPE "POST"
+=============================== test session starts ================================
+platform linux -- Python 3.11.2, pytest-7.2.1, pluggy-1.3.0 -- /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1/pybackend/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1
+collected 1 item                                                                   
 
-ENDPOINT:("/api/v1/user/add")
-METHOD: "POST"
-TYPE: JSON
-INPUT: "request.form.get('key')"
+test_server.py::test_hack_7 PASSED                                           [100%]
 
-output => {
-        'payload': {
-            'email':email,
-            'name':name,
-            'id':id,
-        }
-    }
+================================ 1 passed in 0.10s =================================
 ```
 <br/>
 
 ## 🏆 H-8
 ```sh
-CREATE AN ENDPOINT THAT RESPONDS IF THE REQUEST IS OF TYPE "POST"
+=============================== test session starts ================================
+platform linux -- Python 3.11.2, pytest-7.2.1, pluggy-1.3.0 -- /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1/pybackend/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1
+collected 1 item                                                                   
 
-ENDPOINT:("/api/v1/user/create")
-METHOD: "POST"
-TYPE: JSON
-INPUT: "request.get_json()"
+test_server.py::test_hack_8 PASSED                                           [100%]
 
-output => {
-        'payload': {
-            'email':email,
-            'name':name,
-            'id':id,
-        }
-    }
+================================ 1 passed in 0.10s =================================
 ```
 <br/>
+
+## 🏆 Test Global  
+```sh  
+=============================== test session starts ================================
+platform linux -- Python 3.11.2, pytest-7.2.1, pluggy-1.3.0 -- /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1/pybackend/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/antares/Documentos/Practicas_Git/backend/hack_backend_python_1
+collected 8 items                                                                  
+
+test_server.py::test_hack_1 PASSED                                           [ 12%]
+test_server.py::test_hack_2 PASSED                                           [ 25%]
+test_server.py::test_hack_3 PASSED                                           [ 37%]
+test_server.py::test_hack_4 PASSED                                           [ 50%]
+test_server.py::test_hack_5 PASSED                                           [ 62%]
+test_server.py::test_hack_6 PASSED                                           [ 75%]
+test_server.py::test_hack_7 PASSED                                           [ 87%]
+test_server.py::test_hack_8 PASSED                                           [100%]
+
+================================ 8 passed in 0.10s =================================
+```
 <br/>
